@@ -1,0 +1,124 @@
+body,html {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+.maincontent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/* Ocultamos los Carrusell para que media screen muestre dependiendo la resolucion pc o telefono */
+.slidesmaincel, .slidesmainpc {
+    display: none;
+}
+/* Vista Telefono */
+@media screen and (max-width: 767px) { 
+    .headermain {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 9px 0px;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(221 221 221);
+        flex-wrap: wrap;
+    }
+
+    .imglogomain {
+        width: 243px;
+    }
+
+    .btnlogin {
+        text-decoration: none;
+        background-color: #1899D6;
+        border: solid transparent;
+        border-radius: 16px;
+        border-width: 0 0 4px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: .8px;
+        line-height: 20px;
+        margin: 0;
+        outline: none;
+        overflow: visible;
+        padding: 13px 19px;
+        text-align: center;
+        text-transform: uppercase;
+        touch-action: manipulation;
+        transform: translateZ(0);
+        transition: filter .2s;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+    .slidesmaincel {
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+
+    .footer {
+        margin: auto;
+    }
+}
+/* Vista PC */
+@media screen and (min-width: 1024px) {
+    .headermain {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 9px 15px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(221 221 221);
+        flex-wrap: wrap;
+    }
+
+    .imglogomain {
+        width: 243px;
+    }
+
+    .btnlogin {
+        text-decoration: none;
+        background-color: #1899D6;
+        border: solid transparent;
+        border-radius: 16px;
+        border-width: 0 0 4px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: .8px;
+        line-height: 20px;
+        margin: 0;
+        outline: none;
+        overflow: visible;
+        padding: 13px 19px;
+        text-align: center;
+        text-transform: uppercase;
+        touch-action: manipulation;
+        transform: translateZ(0);
+        transition: filter .2s;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+    .slidesmainpc {
+        display: block;
+    }
+
+    .footer {
+        margin: auto;
+    }
+}

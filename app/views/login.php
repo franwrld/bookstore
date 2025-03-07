@@ -5,11 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo URL;?>public_html/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo URL;?>public_html/css/login.css">
     <title>..::BookStore::..</title>
 </head>
-<body class="pt-5 bg-dark">
-    <div class="container">
-        <div class="card col-md-6 col-sm-12 mx-auto">
+<body>
+    <div class="maincontent">
+        <!-- Header -->
+        <div class="headermain">
+            <!-- LOGO -->
+            <img class="imglogomain" src="<?php echo URL;?>public_html/images/logo.png" alt="">
+            <!-- Login Button -->
+            <a class="btnlogin" href="<?php echo URL;?>">HOME</a>
+        </div>
+
+        <div class="card col-md-6 col-sm-12 mt-4 mx-auto">
             <div class="card-header">
                 <h1 class="text-center">Inicio de sesión</h1>
             </div>

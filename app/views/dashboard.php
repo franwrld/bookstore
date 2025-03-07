@@ -47,7 +47,7 @@
                 </button>
             </div>
         </section>
-    <!--Todos los elementos del pie del sitio-->
+        <!--Todos los elementos del pie del sitio-->
         <section id="pie">
             <?php include_once "app/views/sections/footer.php"; ?>
         </section>
